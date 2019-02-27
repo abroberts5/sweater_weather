@@ -66,7 +66,7 @@ This app is deployed on heroku at:
 
 ### Paths
 
-* localhost:3000/api/v1/forecast?location=denver,co
-* localhost:3000/api/v1/backgrounds?location=denver,co
-* localhost:3000/api/v1/gifs?location=denver,co
-* localhost:3000/api/v1/favorites
+* https://sweater-weather-a.herokuapp.com/api/v1/forecast?location=denver,co
+* https://sweater-weather-a.herokuapp.com/api/v1/backgrounds?location=denver,co
+* https://sweater-weather-a.herokuapp.com/api/v1/gifs?location=denver,co
+* https://sweater-weather-a.herokuapp.com/api/v1/favorites

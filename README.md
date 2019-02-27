@@ -63,3 +63,10 @@ This app is deployed on heroku at:
 ### Contributors
 
 * Me   [https://github.com/abroberts5](https://github.com/abroberts5)
+
+### Paths
+
+* localhost:3000/api/v1/forecast?location=denver,co
+* localhost:3000/api/v1/backgrounds?location=denver,co
+* localhost:3000/api/v1/gifs?location=denver,co
+* localhost:3000/api/v1/favorites

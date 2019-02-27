@@ -8,7 +8,7 @@ describe "Backgrounds Controller", :vcr do
 
     parsed_response = JSON.parse(response.body)
 
-    expect(response.status).to eq(202)
-    expect(parsed_response).to have_key("default_image")
+    expect(response.status).to eq(201)
+    expect(parsed_response).to have_key("photo")
   end
 end

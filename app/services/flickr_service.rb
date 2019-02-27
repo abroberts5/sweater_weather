@@ -1,12 +1,11 @@
 class FlickrService
-  def initialize(lat, lng)
-    @lat = lat
-    @lng = lng
+  def initialize(location)
+    @location = location
   end
 
   def random
     result = get_json
-    result["photos"]["photo"]
+    result["photos"]["photo"].sample
   end
 
   private
@@ -19,17 +18,18 @@ class FlickrService
 
   def get_json
     response = conn.get("services/rest/") do |url|
-      url.params['method'] = "flickr.photos.search"
+      url.params['method'] = "flickr.photos.getrecent"
       url.params['api_key'] = ENV['FLICKR_API_KEY']
       url.params['format'] = "json"
-      url.params['lat'] = @lat
-      url.params['lon'] = @lng
-      url.params['content_type'] = "0"
-      url.params['privacy_filter'] = "1"
+      url.params['location'] = @location
+      url.params['content_type'] = "1"
       url.params['nojsoncallback'] = "true"
       url.params['safe_search'] = "1"
-      url.params['geo_context'] = "2"
+      url.params['safe_search'] = "1"
+      url.params['sort'] = "relevance"
     end
     JSON.parse(response.body)
   end
 end
+
+# https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg

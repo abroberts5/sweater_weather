@@ -6,8 +6,12 @@ class Photo
   end
 
   def grab_photo
-    get_coord = GoogleService.new.all_info(@location)[:geometry][:location]
-    photo = FlickrService.new(get_coord[:lat], get_coord[:lng]).random
-    photo.first[:title]
+    GoogleService.new.all_info(@location)[:geometry][:location]
+    parse_url
+  end
+
+  def parse_url
+    photo = FlickrService.new(@location).random
+    "https://farm#{photo['farm']}.staticflickr.com/#{photo['server']}/#{photo['id']}_#{photo['secret']}.jpg"
   end
 end

@@ -48,7 +48,7 @@ $ bundle exec figaro install
 
 This app is deployed on heroku at:
 
-* [https://weather-city-app.herokuapp.com](https://weather-city-app.herokuapp.com)
+* [https://sweater-weather-a.herokuapp.com/](https://sweater-weather-a.herokuapp.com/)
 
 ## Technologies
 

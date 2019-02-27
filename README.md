@@ -1,24 +1,65 @@
-# README
+## Weather City App
+Welcome to weather city were you'll be able to get information about the weather in your current city.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Local Setup
 
-Things you may want to cover:
+Clone down the repo
+```
+$ git clone git@github.com:abroberts5/weather_city_app.git
+```
 
-* Ruby version
+Install the gem packages
+```
+$ bundle
+```
 
-* System dependencies
+Set up the database
+```
+$ rake db:{create,migrate}
+```
 
-* Configuration
+Run the test suite:
+```
+$ rspec
+```
 
-* Database creation
+## API Setup
+We need to run Figaro to create a hidden .yml file to store our API keys locally
 
-* Database initialization
+```
+$ bundle exec figaro install
+```
 
-* How to run the test suite
+## Within config/application.yml, add the following Environment Variable keys:
 
-* Services (job queues, cache servers, search engines, etc.)
+### Google’s Geocoding API
+* Request Token @:
+[https://developers.google.com/maps/documentation/geocoding/start](https://developers.google.com/maps/documentation/geocoding/start)
 
-* Deployment instructions
+* GOOGLE_API_KEY: `your api key from google`
 
-* ...
+### DarkSky API
+* Request Token @:
+[https://darksky.net/dev](https://darksky.net/dev)
+
+* DARK_SKY_API: `your api key from darksky`
+
+## Deployment
+
+This app is deployed on heroku at:
+
+* [https://weather-city-app.herokuapp.com](https://weather-city-app.herokuapp.com)
+
+## Technologies
+
+* [vcr](https://github.com/vcr/vcr)
+* [rails](https://rubyonrails.org/)
+
+### Versions
+
+* Ruby 2.4.5
+* Rails 5.2.2
+
+### Contributors
+
+* Me   [https://github.com/abroberts5](https://github.com/abroberts5)

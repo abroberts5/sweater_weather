@@ -1,0 +1,137 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=686b75dd30eb67a89c87e00073444492&content_type=0&format=json&geo_context=2&lat=39.7392&lon=-104.9903&method=flickr.photos.search&nojsoncallback=true&privacy_filter=1&safe_search=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 06:43:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '232'
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www246.flickr.gq1.yahoo.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts110.flickr.gq1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e7.ycpi.dnb.yahoo.com (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Public-Key-Pins-Report-Only:
+      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
+        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw=";
+        pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY=";
+        pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="; pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc=";
+        pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A="; includeSubdomains;
+        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photos":{"page":1,"pages":1,"perpage":250,"total":"3","photo":[{"id":"6136002199","owner":"35034348999@N01","secret":"114d0fe585","server":"6166","farm":7,"title":"","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6132853517","owner":"35034348999@N01","secret":"a3f722ab15","server":"6062","farm":7,"title":"P","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6130423078","owner":"35034348999@N01","secret":"9fe644ba37","server":"6187","farm":7,"title":"","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 06:43:13 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=686b75dd30eb67a89c87e00073444492&content_type=0&format=json&geo_context=2&lat=39.7392&lon=-104.9903&method=flickr.photos.search&nojsoncallback=true&privacy_filter=1&safe_search=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 06:43:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '232'
+      P3p:
+      - policyref="https://policies.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM
+        DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND
+        PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www267.flickr.gq1.yahoo.com
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts107.flickr.gq1.yahoo.com (ApacheTrafficServer [cMsSf ]), http/1.1
+        e1.ycpi.dnb.yahoo.com (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=31536000, report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only"
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Public-Key-Pins-Report-Only:
+      - max-age=2592000; pin-sha256="2fRAUXyxl4A1/XHrKNBmc8bTkzA7y4FB/GLJuNAzCqY=";
+        pin-sha256="I/Lt/z7ekCWanjD0Cvj5EqXls2lOaThEA0H2Bg4BT/o="; pin-sha256="Wd8xe/qfTwq3ylFNd3IpaqLHZbh2ZNCLluVzmeNkcpw=";
+        pin-sha256="WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18="; pin-sha256="i7WTqTvh0OioIruIfFR4kMPnBqrS2rdiVPl/s2uC/CY=";
+        pin-sha256="r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="; pin-sha256="uUwZgwDOxcBXrQcntwu+kYFpkiVkOaezL0WYEZ3anJc=";
+        pin-sha256="dolnbtzEBnELx/9lOEQ22e6OZO/QNb6VSSX2XHA3E7A="; includeSubdomains;
+        report-uri="http://csp.yahoo.com/beacon/csp?src=yahoocom-hpkp-report-only"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photos":{"page":1,"pages":1,"perpage":250,"total":"3","photo":[{"id":"6136002199","owner":"35034348999@N01","secret":"114d0fe585","server":"6166","farm":7,"title":"","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6132853517","owner":"35034348999@N01","secret":"a3f722ab15","server":"6062","farm":7,"title":"P","ispublic":1,"isfriend":0,"isfamily":0},{"id":"6130423078","owner":"35034348999@N01","secret":"9fe644ba37","server":"6187","farm":7,"title":"","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 06:43:13 GMT
+recorded_with: VCR 4.0.0

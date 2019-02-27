@@ -31,6 +31,9 @@ gem 'faker'
 gem 'faraday'
 gem 'active_model_serializers'
 gem 'fast_jsonapi'
+gem 'turbolinks'
+gem 'uglifier'
+
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

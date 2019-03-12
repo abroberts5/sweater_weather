@@ -20,6 +20,13 @@ module SweaterWeather
     config.assets.compile = false
     config.assets.js_compressor = false
 
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options]
+      end
+    end
+
     # prevent the cli generator from creating assets when generating a scaffold
     config.generators do |g|
       g.assets false

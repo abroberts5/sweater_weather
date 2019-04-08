@@ -5,7 +5,7 @@ Welcome to weather city were you'll be able to get information about the weather
 
 Clone down the repo
 ```
-$ git clone git@github.com:abroberts5/weather_city_app.git
+$ git clone git@github.com:jaaronbr/weather_city_app.git
 ```
 
 Install the gem packages

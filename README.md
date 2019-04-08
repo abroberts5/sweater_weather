@@ -62,7 +62,7 @@ This app is deployed on heroku at:
 
 ### Contributors
 
-* Me   [https://github.com/abroberts5](https://github.com/abroberts5)
+* Me   [https://github.com/jaaronbr](https://github.com/jaaronbr)
 
 ### Paths
 
